@@ -36,7 +36,7 @@ function annihilate(force=false, auto=false) {
         if (!auto) tmp.anh.gain = getAnhGain();
         if (tmp.anh.gain.lt(1)) return;
         if (!player.annihilation.reached) {
-            if (!confirm("Are you sure you wish to do this? This will reset all previous progress!")) return;
+            if (!confirm("您确定要这样做吗？ 这将重置所有先前的进度！")) return;
             player.annihilation.reached = true
         }
         player.annihilation.energy = player.annihilation.energy.plus(tmp.anh.gain);

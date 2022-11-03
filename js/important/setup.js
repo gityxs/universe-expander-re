@@ -92,7 +92,7 @@ function transformPlayerToDecimal() {
 }
 
 function hardReset() {
-    if (!confirm("Are you 100% sure you want to completely reset your save??? All of your progress will be lost!")) return;
+    if (!confirm("您是否 100% 确定要完全重置您的存档？？？ 你所有的游戏进度都将丢失！")) return;
 
     player = startPlayer();
     save();

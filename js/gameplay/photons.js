@@ -267,7 +267,7 @@ function respecWaveAcc() {
     if (!hasAQUpg(43)) return;
     let t = totalWaveAcc();
     if (t.eq(0)) return;
-    if (!confirm("Warning: This will force an Ultrawave reset!")) return;
+    if (!confirm("警告：这将强制进行 超声波 重置！")) return;
     player.photons.ultra = player.photons.ultra.plus(t);
     for (let i=1;i<=3;i++) player.photons.uwi[i] = new Decimal(0);
     ultrawaveReset(true);

@@ -235,7 +235,7 @@ function buyUniverseUpg(x, auto=false, max=false) {
 function respecUniverseUpgs() {
     if (!player.upgsUnl) return
     if (Object.keys(player.upgs).length==0) return
-    if (!confirm("Are you sure you want to respec your Universal Upgrades for Universe Essence? This will also reset your Universe's size!")) return;
+    if (!confirm("您确定要重洗宇宙精华的通用升级吗？ 这也将重置您的宇宙大小！")) return;
 
     player.essence = player.essence.plus(player.spentEssence)
     player.spentEssence = new Decimal(0)
